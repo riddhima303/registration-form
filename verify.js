@@ -9,17 +9,25 @@ const SCRIPT_URL =
 fetch(SCRIPT_URL)
   .then(res => res.json())
   .then(data => {
-
     if (data.status === "valid") {
 
-      document.getElementById("result").innerHTML = `
-        <div class="ticket valid">
-          <h1>✅ VALID TICKET</h1>
-          <p>Access Granted</p>
-        </div>
-      `;
+  document.getElementById("result").innerHTML = `
+    <div class="ticket valid">
+      <video
+        autoplay
+        muted
+        playsinline
+        width="120"
+        height="120">
+        <source src="./success-check.mp4" type="video/mp4">
+      </video>
 
-    } else if (data.status === "used") {
+      <h1>VERIFIED</h1>
+    </div>
+  `;
+
+}
+    else if (data.status === "used") {
 
       document.getElementById("result").innerHTML = `
         <div class="ticket used">
