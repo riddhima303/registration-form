@@ -19,7 +19,7 @@ fetch(SCRIPT_URL)
 
       result.innerHTML = `
         <div class="ticket valid">
-          <img src="./icon.jpeg" alt="Verified" class="success-icon">
+          <img src="./icon.png" alt="Verified" class="success-icon">
           <h1>VERIFIED</h1>
         </div>
       `;
