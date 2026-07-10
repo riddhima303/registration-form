@@ -25,7 +25,7 @@ fetch(SCRIPT_URL)
     } else if (data.status === "used") {
 
       result.innerHTML = `
-          <img src="./caution.png" alt="Used" class="success-icon">
+          <img src="./c.png" alt="Used" class="success-icon">
           <h1>This QR Code has already been scanned.</h1>
 
       `;
