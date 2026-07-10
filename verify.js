@@ -19,14 +19,9 @@ fetch(SCRIPT_URL)
 
       result.innerHTML = `
         <div class="ticket valid">
-
-          <video autoplay muted playsinline width="140">
-            <source src="success-check.mp4" type="video/mp4">
-          </video>
-
-
+          <img src="./icon.jpeg" alt="Verified" class="success-icon">
+          <h1>VERIFIED</h1>
           <p>Access Granted</p>
-
         </div>
       `;
 
