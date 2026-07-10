@@ -24,7 +24,6 @@ fetch(SCRIPT_URL)
             <source src="success-check.mp4" type="video/mp4">
           </video>
 
-          <h1>✅ VERIFIED</h1>
 
           <p>Access Granted</p>
 
