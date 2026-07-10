@@ -21,6 +21,10 @@ form.addEventListener("submit", async (e) => {
         });
 
         const result = await response.json();
+        if (result.status === "duplicate") {
+        alert("This phone number is already registered.");
+        return;
+}
 
         window.location.href = `success.html?id=${result.id}`;
 
