@@ -2,8 +2,6 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-// Show the registration ID
-document.getElementById("registrationId").textContent = id;
 
 // Generate QR Code
 const verifyUrl =
