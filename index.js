@@ -11,11 +11,11 @@ form.addEventListener("submit", async (e) => {
     message.textContent = "";
 
     const data = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        number: document.getElementById("phone").value,
-        college: document.getElementById("college").value
-    };
+    name: document.getElementById("name").value,
+    city: document.getElementById("city").value,
+    number: document.getElementById("phone").value,
+    studio: document.getElementById("studio").value
+};
 
     try {
 

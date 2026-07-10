@@ -12,12 +12,12 @@
     <form id="registrationForm">
         <label>Name</label>
         <input type="text" id="name" required>
-        <label>Email</label>
-        <input type="email" id="email" required>
-        <label>Phone</label>
-        <input type="text" id="phone" required>
-        <label>College</label>
-        <input type="text" id="college" required>
+        <label>City</label>
+        <input type="text" id="city" required>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" maxlength="10" pattern="[0-9]{10}" required>
+        <label>Studio / Company Name</label>
+        <input type="text" id="studio" required>
         <button type="submit">Register</button>
         <p id="message"></p>
 
