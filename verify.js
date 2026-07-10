@@ -19,7 +19,7 @@ fetch(SCRIPT_URL)
 
       result.innerHTML = `
         <div class="ticket valid">
-          <img src="./icon.png" alt="Verified" class="success-icon">
+          <img src="./icons.png" alt="Verified" class="success-icon">
           <h1>VERIFIED</h1>
         </div>
       `;
@@ -28,8 +28,8 @@ fetch(SCRIPT_URL)
 
       result.innerHTML = `
         <div class="ticket used">
-          <h1>⚠️ TICKET ALREADY USED</h1>
-          <p>This QR Code has already been scanned.</p>
+          <img src="./caution.png" alt="Used" class="success-icon">
+          <h1>This QR Code has already been scanned.</h1>
         </div>
       `;
 
@@ -37,8 +37,8 @@ fetch(SCRIPT_URL)
 
       result.innerHTML = `
         <div class="ticket invalid">
-          <h1>❌ INVALID TICKET</h1>
-          <p>Entry Denied</p>
+          <img src="./red.webp" alt="Invalid" class="success-icon">
+          <h1>Entry Denied</h1>
         </div>
       `;
 

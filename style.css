@@ -241,44 +241,103 @@ button:hover{
     text-transform:uppercase;
     box-shadow:0 8px 18px rgba(13,35,70,.25);
 }
-/* ===== VERIFIED PAGE ===== */
+/* ===========================
+   VERIFY PAGE
+=========================== */
 
-/* VERIFIED CARD */
+.container{
+    width:100%;
+    max-width:650px;
+    padding:20px;
+    background:transparent;
+    box-shadow:none;
+}
 
-.ticket.valid{
+.ticket{
+    width:100%;
+    min-height:500px;
+    border-radius:28px;
+    padding:40px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
+}
 
-    width:100%;
-    padding:30px 20px;
-
+.valid{
     background:#ECFDF5;
-    border:2px solid #22C55E;
-    border-radius:20px;
+    border:3px solid #22C55E;
+    color:#15803D;
+    box-shadow:0 15px 40px rgba(34,197,94,.15);
+}
 
-    overflow:hidden;
+.used{
+    background:#FFF7ED;
+    border:3px solid #F59E0B;
+    color:#92400E;
+    box-shadow:0 15px 40px rgba(245,158,11,.15);
+}
+
+.invalid{
+    background:#FEF2F2;
+    border:3px solid #EF4444;
+    color:#991B1B;
+    box-shadow:0 15px 40px rgba(239,68,68,.15);
 }
 
 .success-icon{
-    display:block;
-    width:120px;
-    max-width:100%;
+    width:180px;
     height:auto;
-    margin:0 auto 20px;
-    object-fit:contain;
+    margin-bottom:25px;
 }
 
-.ticket.valid h1{
-    font-size:36px;
-    color:#16A34A;
+.ticket img{
+    width:180px;
+    height:auto;
+}
+
+.ticket h1{
+    font-size:52px;
     font-weight:800;
-    margin:0;
+    margin-top:10px;
 }
 
-.ticket.valid p{
-    margin-top:8px;
-    color:#4B5563;
+.ticket p{
+    font-size:22px;
+    margin-top:12px;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    body{
+        padding:16px;
+    }
+
+    .container{
+        width:100%;
+        max-width:none;
+        padding:0;
+    }
+
+    .ticket{
+        width:100%;
+        min-height:70vh;
+        padding:30px 20px;
+        border-radius:24px;
+    }
+
+    .ticket img{
+        width:140px;
+    }
+
+    .ticket h1{
+        font-size:38px;
+    }
+
+    .ticket p{
+        font-size:20px;
+    }
 }
