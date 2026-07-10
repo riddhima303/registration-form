@@ -18,28 +18,24 @@ fetch(SCRIPT_URL)
     if (data.status === "valid") {
 
       result.innerHTML = `
-        <div class="ticket valid">
           <img src="./icons.png" alt="Verified" class="success-icon">
           <h1>VERIFIED</h1>
-        </div>
       `;
 
     } else if (data.status === "used") {
 
       result.innerHTML = `
-        <div class="ticket used">
           <img src="./caution.png" alt="Used" class="success-icon">
           <h1>This QR Code has already been scanned.</h1>
-        </div>
+
       `;
 
     } else {
 
       result.innerHTML = `
-        <div class="ticket invalid">
-          <img src="./red.webp" alt="Invalid" class="success-icon">
+          <img src="./red.png" alt="Invalid" class="success-icon">
           <h1>Entry Denied</h1>
-        </div>
+  
       `;
 
     }

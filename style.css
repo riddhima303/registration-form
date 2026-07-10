@@ -241,103 +241,61 @@ button:hover{
     text-transform:uppercase;
     box-shadow:0 8px 18px rgba(13,35,70,.25);
 }
-/* ===========================
+/* ==========================
    VERIFY PAGE
-=========================== */
+========================== */
 
-.container{
-    width:100%;
-    max-width:650px;
-    padding:20px;
-    background:transparent;
-    box-shadow:none;
+.verify-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#EEF4FF,#F8FAFC);
 }
 
-.ticket{
+#result{
     width:100%;
-    min-height:500px;
-    border-radius:28px;
-    padding:40px;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
-}
-
-.valid{
-    background:#ECFDF5;
-    border:3px solid #22C55E;
-    color:#15803D;
-    box-shadow:0 15px 40px rgba(34,197,94,.15);
-}
-
-.used{
-    background:#FFF7ED;
-    border:3px solid #F59E0B;
-    color:#92400E;
-    box-shadow:0 15px 40px rgba(245,158,11,.15);
-}
-
-.invalid{
-    background:#FEF2F2;
-    border:3px solid #EF4444;
-    color:#991B1B;
-    box-shadow:0 15px 40px rgba(239,68,68,.15);
+    padding:20px;
 }
 
 .success-icon{
-    width:180px;
+    width:250px;
+    max-width:80vw;
     height:auto;
-    margin-bottom:25px;
+    display:block;
+    margin-bottom:20px;
 }
 
-.ticket img{
-    width:180px;
-    height:auto;
+#result h1{
+    font-size:48px;
+    font-weight:700;
+    color:#111827;
+    margin:0;
 }
 
-.ticket h1{
-    font-size:52px;
-    font-weight:800;
-    margin-top:10px;
-}
-
-.ticket p{
-    font-size:22px;
+#result p{
+    font-size:20px;
+    color:#111827;
     margin-top:12px;
 }
 
-/* Mobile */
-
 @media (max-width:768px){
 
-    body{
-        padding:16px;
+    .success-icon{
+        width:500px;
     }
 
-    .container{
-        width:100%;
-        max-width:none;
-        padding:0;
+    #result h1{
+        font-size:50px;
     }
 
-    .ticket{
-        width:100%;
-        min-height:70vh;
-        padding:30px 20px;
-        border-radius:24px;
+    #result p{
+        font-size:30px;
     }
 
-    .ticket img{
-        width:140px;
-    }
-
-    .ticket h1{
-        font-size:38px;
-    }
-
-    .ticket p{
-        font-size:20px;
-    }
 }
