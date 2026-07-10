@@ -28,7 +28,7 @@ form.addEventListener("submit", async (e) => {
 
         if (result.status === "duplicate") {
 
-            message.textContent = "❌ This phone number is already registered.";
+            message.textContent = "❌  already registered.";
             message.className = "error";
             return;
         }
