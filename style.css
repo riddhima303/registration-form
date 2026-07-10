@@ -11,10 +11,12 @@ body{
     justify-content:center;
     align-items:center;
     background:linear-gradient(135deg,#EEF4FF,#F8FAFC);
+    padding:20px;
 }
 
 .container{
-    width:420px;
+    width:95%;
+    max-width:500px;
     background:rgba(255,255,255,.95);
     border-radius:24px;
     padding:35px;
@@ -123,7 +125,6 @@ button:hover{
     line-height:1.6;
 }
 
-
 .footer{
     margin-top:25px;
     color:#6B7280;
@@ -143,9 +144,14 @@ button:hover{
 /* VERIFY PAGE */
 
 .ticket{
-    padding:25px;
-    border-radius:18px;
-    margin-top:15px;
+    width:100%;
+    padding:40px 25px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
 .valid{
@@ -165,93 +171,49 @@ button:hover{
     border:2px solid #EF4444;
     color:#991B1B;
 }
-.success-title{
-    font-size:30px;
-    font-weight:700;
-    white-space:nowrap;
-    margin-bottom:12px;
-}
-.sponsor{
-    margin-top:25px;
-    text-align:center;
-}
 
-.sponsor-text{
-    color:#777;
-    font-size:15px;
-    margin-bottom:10px;
-}
-
-.sponsor-logo{
-    width:110px;
-    height: 60px;
-    margin:auto;
-    display:block;
-}
-
-.tagline{
-    margin-top:8px;
-    font-size:14px;
-    color:#4b5563;
-    letter-spacing:.5px;
-}
-.event-footer{
-    margin-top:0;
-    padding-top:0;
-    text-align:center;
-}
-
-.footer-title{
-    display:inline-block;
-    padding:8px 28px;
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:black;
-    border-bottom:2px solid black;
+.success-icon{
+    width:220px;
+    height:auto;
+    object-fit:contain;
     margin-bottom:20px;
 }
 
-.association-card{
-    background:#fffdf8;
-    border:1px solid #efe5c8;
-    border-radius:18px;
-    padding:22px 20px;
-    box-shadow:0 8px 24px rgba(0,0,0,.06);
+.ticket h1{
+    font-size:42px;
+    font-weight:800;
+    margin:10px 0;
 }
 
-.association-names{
-    font-size:16px;
-    font-weight:600;
-    color:#444;
-    letter-spacing:.5px;
-    margin-bottom:18px;
+.ticket p{
+    font-size:20px;
+    margin-top:8px;
 }
 
-.association-strip{
-    display:inline-block;
-    background:linear-gradient(90deg,#0d2346,#1b3b73);
-    color:white;
-    padding:12px 30px;
-    border-radius:999px;
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    box-shadow:0 8px 18px rgba(13,35,70,.25);
-}
-.success-icon {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  margin-bottom: 15px;
-}
+/* Mobile */
 
-.ticket.valid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+@media (max-width:600px){
+
+    .container{
+        width:100%;
+        max-width:none;
+        padding:20px;
+    }
+
+    .ticket{
+        padding:35px 20px;
+    }
+
+    .success-icon{
+        width:180px;
+    }
+
+    .ticket h1{
+        font-size:32px;
+    }
+
+    .ticket p{
+        font-size:18px;
+    }
+
 }
